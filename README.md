@@ -24,7 +24,7 @@ bundle exec jekyll serve
 
 ## Deploying to gh-pages
 
-Before deploying to gh-pages, you must comment out the line `gem "jekyll", "3.3.1"`
+Before deploying to gh-pages, you must comment out the line `gem "jekyll", "x.x.x"`
 in the Gemfile and uncomment the line `gem "github-pages", group: :jekyll_plugins`.
 
 Then make sure your `_config.yml` file is completely filled out and push to your
