@@ -10,17 +10,22 @@ Make sure you have all the Jekyll requirements installed and clone the project.
 git clone git@github.com:flattmo/azulite.git
 ```
 
-Navigate into the directory you cloned the theme into and run `bundle install`
- to install the Gemfile dependencies.
+Navigate into the directory you cloned the theme into install the Gemfile dependencies
+using:
 
-You can add markdown files to the `_posts` folder to have them appear on the
-homepage.
+```bash
+bundle install
+```
 
 Build and serve the site locally with:
 
 ```bash
 bundle exec jekyll serve
 ```
+
+You can now add markdown files to the `_posts` folder to have them appear on the
+homepage.
+
 
 ## Deploying to gh-pages
 
