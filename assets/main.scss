@@ -1,0 +1,128 @@
+---
+---
+$lower-margin: 15px;
+$top-margin: 30px;
+$side-margins: 15px;
+$break-small: 667px;
+$background: #f7fcff;
+$font-color: #314f5b;
+$link-color: #314f5b;
+$font-size-regular: 24px;
+$code-font-size-regular: 20px;
+$code-font-size-mobile: 12px;
+$font-size-mobile: 16px;
+$line-height: 140%;
+$page-width: 800px;
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700,700i');
+
+h1, h2, h3, h4, h5, h6, p, ul, li, .pagination, figure.highlight {
+    margin-top: 0;
+    margin-bottom: $lower-margin;
+    @media screen and (max-width: $break-small) {
+        margin-bottom: $lower-margin/2;
+    }
+}
+
+ul.post-list {
+    li {
+        h2 {
+            margin-bottom: 0;
+            @media screen and (max-width: $break-small) {
+                font-size: 1.2em;
+            }
+        }
+        list-style-type: none;
+    }
+    padding-left: 0;
+}
+
+p {
+    line-height: $line-height;
+}
+
+body {
+    font-size: $font-size-regular;
+    max-width: $page-width;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: auto;
+    background-color: $background;
+    color: $font-color;
+    @media screen and (max-width: $break-small) {
+        font-size: $font-size-mobile;
+    }
+}
+
+.container {
+    margin-left: $side-margins;
+    margin-right: $side-margins;
+    margin-top : $top-margin;
+    @media screen and (max-width: $break-small) {
+        margin-top: $top-margin/2;
+    }
+}
+
+h1.page-title {
+    font-size: 3.3em;
+    @media screen and (max-width: $break-small) {
+        font-size: 2.3em;
+    }
+}
+
+.pagination {
+    text-align: center;
+    span {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    a {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+a {
+    &:link {
+        color: $link-color;
+    }
+    &:visited {
+        color: $link-color;
+    }
+    &:hover {
+        color: lighten($link-color, 20%);
+    }
+}
+.post-title {
+    margin-bottom: 0;
+}
+figure.highlight {
+    padding-left: $side-margins;
+    padding-right: $side-margins;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
+    font-size: $code-font-size-regular;
+    @media screen and (max-width: $break-small) {
+        font-size: $code-font-size-mobile;
+        padding-left: $side-margins/2;
+        padding-right: $side-margins/2;
+    }
+    border: 1px solid $font-color;
+    pre {
+        margin-top: $lower-margin;
+        margin-bottom: $lower-margin;
+        @media screen and (max-width: $break-small) {
+            font-size: $code-font-size-mobile;
+            margin-top: $lower-margin/2;
+            margin-bottom: $lower-margin/2;
+        }
+    }
+    overflow: auto;
+}
+
+.post-content {
+    img {
+        width: 100%;
+    }
+}
+
+@import "syntax-highlighting";
