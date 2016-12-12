@@ -1,4 +1,4 @@
 {% include head/meta.html %}
 {% include head/stylesheets.html %}
-<title>{{ page.title }} | {{ site.title }}</title>
+<title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
 {% include head/shim.html %}
