@@ -1,6 +1,6 @@
 # Azulite
 
-Azulite is a simple, minimal Jekyll theme. Preview at [mattmflowers.com/azulite](https://mattmflowers.com/azulite)
+Azulite is a lite, minimal Jekyll theme with a simple, yet elegant, colorscheme. Preview at [mattmflowers.com/azulite](https://mattmflowers.com/azulite)
 
 ## Running locally
 
