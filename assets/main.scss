@@ -57,8 +57,10 @@ body {
     margin-left: $side-margins;
     margin-right: $side-margins;
     margin-top : $top-margin;
+    margin-bottom : $top-margin;
     @media screen and (max-width: $break-small) {
         margin-top: $top-margin/2;
+        margin-bottom: $top-margin/2;
     }
 }
 
@@ -122,6 +124,13 @@ figure.highlight {
 .post-content {
     img {
         width: 100%;
+    }
+}
+
+.page-links {
+    a {
+        margin-right: 15px;
+        font-size: 1.2em;
     }
 }
 
