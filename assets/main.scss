@@ -134,4 +134,9 @@ figure.highlight {
     }
 }
 
+.right {
+    display: inline-block;
+    float: right;
+}
+
 @import "syntax-highlighting";
