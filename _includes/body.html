@@ -1,5 +1,13 @@
 <body>
     <div class="container">
         {{ content }}
+        <hr>
+        <div class="page-links">
+            <span onclick="window.history.back()">Back</span>
+            <div class="right">
+                <a href="{{ baseurl }}/projects">Projects</a>
+                <a href="{{ baseurl }}/about">About</a>
+            </div>
+        </div>
     </div>
 </body>
